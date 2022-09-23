@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.6490" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-20T08:13:24" tests="0" file="cypress/integration/triger.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - skrolowanie / najechanie" timestamp="2022-09-20T08:13:24" tests="2" time="20.6370" failures="0">
+    <testcase name="E2E - skrolowanie / najechanie najechanie na dany element" time="20.4700" classname="najechanie na dany element">
+    </testcase>
+    <testcase name="E2E - skrolowanie / najechanie skrolowanie do boxa special" time="0.1140" classname="skrolowanie do boxa special">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-20T08:13:47.864Z",
+    "end": "2022-09-20T08:13:55.876Z",
+    "duration": 8012,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e796d84-c57b-4a9f-8993-a1517ea80290",
+      "title": "",
+      "fullFile": "cypress/integration/wgrywaniePliku.js",
+      "file": "cypress/integration/wgrywaniePliku.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bb3a4af-cb5c-4701-8888-8743fb929d92",
+          "title": "E2E - Wgrywanie pliku",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Wgrywanie pliku do inputa w contact us",
+              "fullTitle": "E2E - Wgrywanie pliku Wgrywanie pliku do inputa w contact us",
+              "timedOut": null,
+              "duration": 7978,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/index.php?controller=contact\");\ncy.get(\"#fileUpload\").attachFile(\"../fixtures/zabka.png\");\ncy.get(\"span.filename\").should(\"contain\", \"zabka.png\");",
+              "err": {},
+              "uuid": "0911501f-5d6e-46e2-8155-f10e12e73664",
+              "parentUUID": "5bb3a4af-cb5c-4701-8888-8743fb929d92",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0911501f-5d6e-46e2-8155-f10e12e73664"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7978,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

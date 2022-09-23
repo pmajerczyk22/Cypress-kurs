@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-20T08:12:07.266Z",
+    "end": "2022-09-20T08:12:14.230Z",
+    "duration": 6964,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5855f2a7-beb1-4704-a3bd-87e58f4fcf0b",
+      "title": "",
+      "fullFile": "cypress/integration/invoke.js",
+      "file": "cypress/integration/invoke.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9949b8d6-6a85-41d2-9fb9-f55f8314659b",
+          "title": "E2E - Metoda Invoke",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Invoke",
+              "fullTitle": "E2E - Metoda Invoke Invoke",
+              "timedOut": null,
+              "duration": 6912,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\"); //Pobieranie wartosci z danego elementu\ncy.get('[title=\"Contact Us\"]').invoke(\"text\").then(tekst => {\n  cy.log(tekst);\n}); //uzyskanie dostepu do wartosci atrybutu\ncy.get('[title=\"Contact Us\"]').invoke(\"attr\", \"href\").then(link => {\n  cy.log(link);\n});\ncy.get('[title=\"Contact Us\"]').invoke(\"attr\", \"title\").then(title => {\n  cy.log(title);\n}); //pobieranie wartosci \ncy.get(\"#search_query_top\").type(\"Test wlasny\").invoke(\"prop\", \"checked\").then(wartosc => {\n  cy.log(wartosc);\n});",
+              "err": {},
+              "uuid": "bedd334a-bdc7-4905-aad9-39ae336e635f",
+              "parentUUID": "9949b8d6-6a85-41d2-9fb9-f55f8314659b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bedd334a-bdc7-4905-aad9-39ae336e635f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6912,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

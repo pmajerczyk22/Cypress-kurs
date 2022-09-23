@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.8000" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-20T08:14:11" tests="0" file="cypress/integration/zmienne.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Zmienne " timestamp="2022-09-20T08:14:11" tests="1" time="3.7840" failures="0">
+    <testcase name="E2E - Zmienne  Zmienne srodowiskowe" time="1.3890" classname="Zmienne srodowiskowe">
+    </testcase>
+  </testsuite>
+</testsuites>

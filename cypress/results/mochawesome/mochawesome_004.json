@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-20T08:11:13.336Z",
+    "end": "2022-09-20T08:11:18.428Z",
+    "duration": 5092,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4512aa9f-5398-4acf-9fa5-08bdf3795492",
+      "title": "",
+      "fullFile": "cypress/integration/asercje.js",
+      "file": "cypress/integration/asercje.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d998a3f2-58d6-4582-b7e0-4074684028b8",
+          "title": "E2E - Asercje",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Asercje expect oraz should",
+              "fullTitle": "E2E - Asercje Asercje expect oraz should",
+              "timedOut": null,
+              "duration": 4968,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\"); //weryfikscjs tekstu \ncy.get('a[title=\"Contact Us\"]').should(\"contain\", \"Contact us\");\ncy.get('a[title=\"Contact Us\"]').then(zakladka => {\n  expect(zakladka).to.contain(\"Contact us\");\n}); //Sprawdzenie czy nie zawiera tekstu \ncy.get('a[title=\"Contact Us\"]').should(\"not.contain\", \"al\");\ncy.get('a[title=\"Contact Us\"]').then(zakladka => {\n  expect(zakladka).not.to.contain(\"abc\");\n}); //weryfikacja czy znacznik posiada klase\ncy.get(\"#search_query_top\").should(\"have.class\", \"form-control\");\ncy.get(\"#search_query_top\").then(klasa => {\n  expect(klasa).to.have.class(\"form-control\");\n}); //czy element jest widoczny\ncy.get(\"#search_query_top\").should(\"be.visible\");\ncy.get(\"#search_query_top\").then(wyszukiwarka => {\n  expect(wyszukiwarka).to.be.visible;\n}); //weryfikacja ilosci pobranych elementow\ncy.get(\"ul.sf-menu\").find(\"li\").should(\"have.length\", 14);\ncy.get(\"ul.sf-menu\").find(\"li\").then(zakladki => {\n  expect(zakladki).to.have.length(14);\n}); //weryfikacja wartosci css danego elementu\ncy.get(\"#search_query_top\").should(\"have.css\", \"line-height\", \"45px\");\ncy.get(\"#search_query_top\").then(css => {\n  expect(css).to.have.css(\"line-height\", \"45px\");\n});",
+              "err": {},
+              "uuid": "610a3071-b88b-425f-a8ff-526e2cafc984",
+              "parentUUID": "d998a3f2-58d6-4582-b7e0-4074684028b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "610a3071-b88b-425f-a8ff-526e2cafc984"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4968,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

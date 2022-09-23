@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.3930" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-20T08:11:08" tests="0" file="cypress/integration/alert.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - alerts" timestamp="2022-09-20T08:11:08" tests="2" time="2.3790" failures="0">
+    <testcase name="E2E - alerts alerts" time="0.2750" classname="alerts">
+    </testcase>
+    <testcase name="E2E - alerts Alert confirm" time="0.1020" classname="Alert confirm">
+    </testcase>
+  </testsuite>
+</testsuites>
